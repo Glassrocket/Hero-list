@@ -3,16 +3,151 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color: #242424;
+    color: #4C5C63;
     font-family: Helvetica, sans-serif;
 }
 body {
     text-align: center;
+    background-color: #D4DEE2;
 }
-div {
+div, button {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 16px 0 16px 0;
+}
+
+input {
+    width: 100%;
+    height: 48px;
+    background-color: #f5f5f5;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 24px;
+    border: solid 1px #BDCACF;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    color: #4C5C63;
+}
+
+button {
+    width: 48%;
+    height: 48px;
+    border-radius: 7px;
+    font-size: 18px;
+    background-color: #4C5C63;
+    color: #fff;
+}
+
+ul, ol {
+    width: 100%;
+}
+
+li {
+    color: #4C5C63;
+    text-align: left;
+    line-height: 22px;
+    padding: 12px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+ul li:nth-child(odd) {
+   background-color: #EFF5F8;;
+  
+}
+
+h4 {
+    margin-bottom: 24px;
+}
+
+span {
+    display: inline;
+}
+
+.main-wrapper {
+    width: 100%;
+    padding: 24px 0 24px 0;
+}
+
+.code-container {
+    width: 60%;
+    min-width: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 24px;
+}
+
+.btn-container {
+flex-direction: row;
+justify-content: space-between;
+width: 100%;
+}
+
+.btn-secondary {
+background-color: #fff;
+border: 1px solid #4C5C63;
+color: #4C5C63;
+
+}
+
+.btn-del-Item {
+    background-color: #A80101;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    padding: 0;
+    font-size: 12px;
+    align-self: center;
+}
+
+.input-item {
+    align-items: flex-start;
+    width: 100%;
+}
+
+.span-div {
+    display: block;
+    padding: 0 12px 0 0;
+    margin: 0;
+}
+
+
+
+/*PSEUDO*/
+::placeholder {
+    color: #BDCACF;
+}
+
+button:hover {
+    background-color: #374348;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.20);
+}
+
+.btn-secondary:hover {
+    background-color: #f5f5f5;
+    border: 2px solid;
+}
+
+.btn-del-Item:hover {
+    background-color: #EA0000;
+}
+
+button:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid;
+    background-color: #D9E3E9;
+
 }
